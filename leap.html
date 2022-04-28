@@ -5,28 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Calendar</title>
   <link rel="stylesheet" href="calStyle.css">
 </head>
 
 <body>
-  <!--   
-  <button type="button" class="prevMonth">Prev</button>
-  <button type="button" class="nextMonth">Next</button>
- -->
- 
-  <div class="month">
-    <ul>
-      <li class="prev prevMonth">&#10094;</li>
-      <li class="monthname"></li>
-      <li class="next nextMonth">&#10095;</li>
-    </ul>
+  <div class="calendar">
+    <div class="calendarMonthBar">
+      <button type="button" class="prevMonth">&#10094;</button>
+      <div class="monthname"></div>
+      <button type="button" class="nextMonth">&#10095;</button>
+    </div>
+    <div class="calendar-body">
+      <div class="calendar-dayNames"></div>
+      <div class="calendar-dayNumbers"></div>
+    </div>
   </div>
-
-  <ul class="calendar-weekDays"></ul>
-  <ul class="calendar-monthDays days"></ul>
 </body>
 
 <!-- script cannot be in head block; otherwise DOM isn't loaded and querySelector returns null -->
 <script src="main.js"></script>
+
 </html>
